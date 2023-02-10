@@ -31,10 +31,9 @@ export default function Todos() {
 			});
 	};
 
-
-
 	// fetch the saved todos realtime
-	useEffect(() => {
+	useEffect(() => {		
+
 		todoRef
 			// order by time of creating
 			.orderBy('createdAt', 'desc')
@@ -51,7 +50,7 @@ export default function Todos() {
 						// todo.idade = doc.idade
 						// todo.imagem =  "require('./assets/images/food1.jpg')",
 						newTodos.push(todo)
-						console.log(todo)
+						//console.log(todo)
 					});
 					// set the todos to the state
 					setTodos(newTodos)
