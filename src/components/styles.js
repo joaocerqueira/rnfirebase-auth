@@ -4,8 +4,8 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        marginTop:20
-    },
+        marginTop:20,
+	},
     formContainer: {
         flexDirection: 'row',
         height: 80,
@@ -44,6 +44,15 @@ export default StyleSheet.create({
         marginTop: 20,
         padding: 20,
     },
+
+	imgList: {
+		width: 50,
+		height: 50,
+		borderWidth: 10,
+		borderColor: '#333',
+		backgroundColor: '#eee',
+	},
+
     todoContainer: {
         marginTop: 16,
         borderBottomColor: '#cccccc',
